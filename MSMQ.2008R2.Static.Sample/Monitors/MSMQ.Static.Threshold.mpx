@@ -1,0 +1,37 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Monitoring>
+    <Monitors>
+      <UnitMonitor ID="UIGeneratedMonitor983435b9e0ee49da9683933c8d7fbf78" Accessibility="Public" Enabled="false" Target="MSMQ!Microsoft.MSMQ.2008R2.Queues" ParentMonitorID="Health!System.Health.PerformanceState" Remotable="true" Priority="Normal" TypeID="Custom.Performance.ThresholdMonitorType" ConfirmDelivery="false">
+        <Category>Custom</Category>
+        <AlertSettings AlertMessage="UIGeneratedMonitor983435b9e0ee49da9683933c8d7fbf78_AlertMessageResourceID">
+          <AlertOnState>Warning</AlertOnState>
+          <AutoResolve>true</AutoResolve>
+          <AlertPriority>Normal</AlertPriority>
+          <AlertSeverity>MatchMonitorHealth</AlertSeverity>
+          <AlertParameters>
+            <AlertParameter1>$Data[Default='']/Context/InstanceName$</AlertParameter1>
+            <AlertParameter2>$Data[Default='']/Context/ObjectName$</AlertParameter2>
+            <AlertParameter3>$Data[Default='']/Context/CounterName$</AlertParameter3>
+            <AlertParameter4>$Data[Default='']/Context/Value$</AlertParameter4>
+            <AlertParameter5>$Data[Default='']/Context/TimeSampled$</AlertParameter5>
+          </AlertParameters>
+        </AlertSettings>
+        <OperationalStates>
+          <OperationalState ID="HealthyThreshold" MonitorTypeStateID="Healthy" HealthState="Success" />
+          <OperationalState ID="WarningThreshold" MonitorTypeStateID="Warning" HealthState="Warning" />
+          <OperationalState ID="CriticalThreshold" MonitorTypeStateID="Critical" HealthState="Error" />
+        </OperationalStates>
+        <Configuration>
+          <IntervalSeconds>600</IntervalSeconds>
+          <ComputerName>$Target/Host/Host/Property[Type="Windows!Microsoft.Windows.Computer"]/NetworkName$</ComputerName>
+          <QueuePath>$Target/Property[Type="MSMQ!Microsoft.MSMQ.2008R2.Queue"]/PathName$</QueuePath>
+          <CounterName>Messages In Queue</CounterName>
+          <LogDetail>false</LogDetail>
+          <TimeoutSeconds>300</TimeoutSeconds>
+          <WarningThreshold>100</WarningThreshold>
+          <CriticalThreshold>5000</CriticalThreshold>
+        </Configuration>
+      </UnitMonitor>
+    </Monitors>
+  </Monitoring>
+</ManagementPackFragment>

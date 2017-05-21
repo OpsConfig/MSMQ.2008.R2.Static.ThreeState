@@ -1,0 +1,60 @@
+﻿  <ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Presentation>
+      <Folders>
+        <Folder ID="Folder_771c365823204434b1e53bfd73ba7a6d" Accessibility="Public" ParentFolder="SystemCenter!Microsoft.SystemCenter.Monitoring.ViewFolder.Root" />
+      </Folders>
+      <StringResources>
+        <StringResource ID="UIGeneratedMonitor983435b9e0ee49da9683933c8d7fbf78_AlertMessageResourceID" />
+      </StringResources>
+    </Presentation>
+    <LanguagePacks>
+      <LanguagePack ID="ENU" IsDefault="false">
+        <DisplayStrings>
+          <DisplayString ElementID="Folder_771c365823204434b1e53bfd73ba7a6d">
+            <Name>MSMQ.Static.Threshold.ThreeState</Name>
+          </DisplayString>
+          <DisplayString ElementID="UIGeneratedMonitor983435b9e0ee49da9683933c8d7fbf78">
+            <Name>MSMQ.Static.Threshold.ThreeState</Name>
+            <Description />
+          </DisplayString>
+          <DisplayString ElementID="UIGeneratedMonitor983435b9e0ee49da9683933c8d7fbf78" SubElementID="HealthyThreshold">
+            <Name>Healthy</Name>
+          </DisplayString>
+          <DisplayString ElementID="UIGeneratedMonitor983435b9e0ee49da9683933c8d7fbf78" SubElementID="WarningThreshold">
+            <Name>Warning</Name>
+          </DisplayString>
+          <DisplayString ElementID="UIGeneratedMonitor983435b9e0ee49da9683933c8d7fbf78" SubElementID="CriticalThreshold">
+            <Name>Critical</Name>
+          </DisplayString>
+          <DisplayString ElementID="UIGeneratedMonitor983435b9e0ee49da9683933c8d7fbf78_AlertMessageResourceID">
+            <Name>MSMQ Threshold Exceeded</Name>
+            <Description>
+              Instance: {0}
+              Object: {1}
+              Counter: {2}
+              Has a value: {3}
+              At time {4}
+            </Description>
+          </DisplayString>
+          <DisplayString ElementID="Custom.Performance.ThresholdMonitorType">
+            <Name>Simple Threshold</Name>
+            <Description>A simple threshold monitor.</Description>
+          </DisplayString>
+          <DisplayString ElementID="Custom.Performance.ThresholdMonitorType" SubElementID="Critical">
+            <Name>Critical</Name>
+            <Description>Monitored value is higher than the Critical threshold value</Description>
+          </DisplayString>
+          <DisplayString ElementID="Custom.Performance.ThresholdMonitorType" SubElementID="Warning">
+            <Name>Warning</Name>
+            <Description>Monitored value is higher than the Warning threshold value</Description>
+          </DisplayString>
+          <DisplayString ElementID="Custom.Performance.ThresholdMonitorType" SubElementID="CriticalThreshold">
+            <Name>CriticalThreshold</Name>
+          </DisplayString>
+          <DisplayString ElementID="Custom.Performance.ThresholdMonitorType" SubElementID="WarningThreshold">
+            <Name>WarningThreshold</Name>
+          </DisplayString>
+        </DisplayStrings>
+      </LanguagePack>
+    </LanguagePacks>
+  </ManagementPackFragment>
